@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <div class="head"> </div>
+
+    <body>
+        <div class="headerProv"> </div>
+
+        <div class="containerRegistro">
+            <div class="containerForm">
+                <label class="lblFormRegistro">Registrar Cliente</label>
+
+                <div class="divFormInicioSesion divFormRegistro">
+                    <form id="formRegistrarCliente" class="formInicioSesion">
+                        <div id="campoCedula">
+                            <label>Cédula</label>
+                            <input class="input" type="text" id="cedula" name="cedula" pattern="[0-9]*" maxlength="10" autocomplete="off" required>
+                        </div>
+
+                        <div id="campoNombre">
+                            <label>Nombre</label>
+                            <input class="input" type="text" id="nombre" name="nombre" autocomplete="off" required>
+                        </div>
+
+                        <div id="campoEmail">
+                            <label>Correo electrónico</label>
+                            <input class="input" type="email" id="email" name="email" autocomplete="off" required>
+                        </div>
+
+                        <div id="botonRegistrarCliente">
+                            <input id="btRegistrarCliente2" class="submit" type="submit" value="Registrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="containerTablaRegistro">
+                <label class="lblTablaRegistro">Clientes</label>
+
+                <div class="divTablaRegistro">
+                    <table class="tablaRegistro">
+                        <thead>
+                            <tr>
+                                <th class="thRegistroRoundedLeft">Cédula</th>
+                                <th>Nombre</th>
+                                <th class="thRegistroRoundedRight">Correo electrónico</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="cuerpo-tabla-clientes">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupRegistrarCliente" class="popup">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupRegistrarCliente" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\check.png" height="50px" width="50px">
+                <p>
+                    El cliente ha sido registrado correctamente.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayRegistrarCliente" class="overlay">
+
+        </div>
+
+        <div id="popupErrorRegistrarCliente" class="popupError">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupErrorRegistrarCliente" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\error.png" height="50px" width="50px">
+                <p>
+                    Error al registrar el cliente. Por favor intenta de nuevo más tarde.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayErrorRegistrarCliente" class="overlayError">
+
+        </div>
+
+        <div class="footerBase"> </div>
+
+        <script src="/js/clienteApp.js"> </script>
+    </body>
+
+</html>

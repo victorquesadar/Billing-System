@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <div class="head"> </div>
+
+    <body>
+        <div class="headerBaseAdmin"> </div>
+
+        <div class="containerLista">
+            <div id="containerTablaListaProveedores">
+                <label class="lblTablaRegistro">Proveedores</label>
+
+                <div class="divTablaRegistro">
+                    <table class="tablaRegistro">
+                        <thead>
+                        <tr>
+                            <th class="thRegistroRoundedLeft">Cédula</th>
+                            <th>Nombre</th>
+                            <th>Correo electrónico</th>
+                            <th class="thRegistroRoundedRight"> </th>
+                        </tr>
+                        </thead>
+
+                        <tbody id="cuerpo-tabla-proveedores">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button class="closePopUp btClose">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\check.png" height="50px" width="50px">
+                <p>
+                    El proveedor ha sido eliminado correctamente.
+                </p>
+            </div>
+        </div>
+
+        <div class="overlay">
+
+        </div>
+
+        <div class="popupError">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button class="closePopUp btClose">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\error.png" height="50px" width="50px">
+                <p>
+                    Error al eliminar el proveedor. Por favor intenta de nuevo más tarde.
+                </p>
+            </div>
+        </div>
+
+        <div class="overlayError">
+
+        </div>
+
+        <div class="footerBase"> </div>
+
+        <script src="/js/app.js"> </script>
+    </body>
+
+</html>

@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* ---BASE.HTML--- */
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.headerBase {
+    background-color: #003069;
+    color: white;
+    text-align: center;
+    padding: 0.1em;
+    width: 100%;
+    height: 95px;
+}
+
+#cerrarSesion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -85px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#sifacHeader {
+    margin-top: 4px;
+}
+
+header h4 {
+    margin-top: -10px;
+    padding: 0.5em;
+}
+
+.headerNav {
+    background-color: #003069;
+    color: white;
+    text-align: left;
+    padding: 0.1em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+}
+
+nav {
+    background-color: #003069;
+    color: white;
+    padding: 0.5em;
+    margin-left: 40px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.sifacH {
+    margin-left: 40px;
+}
+
+#footerBase {
+    background-color: #003069;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --------------- */
+
+/* ---INDEX.HTML--- */
+
+.inicioSesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-right: 25px;
+}
+
+#sifacIndex, .divFormInicioSesion, .formInicioSesion {
+    margin: 25px 50px;
+}
+
+.divFormInicioSesion {
+    width: 350px;
+    height: 395px;
+}
+
+.formInicioSesion {
+    max-width: 400px;
+    margin-right: 65px;
+}
+
+#sifacImg {
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+#sifacIndex {
+    display: block;
+}
+
+#sifacLabel {
+    display: block;
+    margin-top: -10px;
+}
+
+.divFormInicioSesion {
+    border: 2px solid #b6b6b6;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #b6b6b6;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.submit {
+    width:109%;
+    background-color: #2670c9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 6px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.botonRegistrar {
+    margin-top: 65px;
+}
+
+#lblRegistro {
+    margin-left: 40px;
+}
+
+.botonRegistro {
+    width:109%;
+    background-color: #7fb1e4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.divLink {
+    width:102%;
+    background-color: #7fb1e4;
+    text-align: center;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#footerIndex {
+    background-color: white;
+    position: absolute;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ---------------- */
+
+/* ---MENUPROV.HTML--- */
+
+.bodyConHeader {
+    padding-bottom: 100px;
+}
+
+#menuProv {
+    position: relative;
+    vertical-align: middle;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+#menuProv1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#menuProv2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 100px;
+}
+
+.bt {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #7fb1e4;
+    color: white;
+    border: 3px solid #2670c9;
+    cursor: pointer;
+}
+
+.lbl {
+    display: block;
+    margin-top: 9px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+#btFacturar {
+        background-image: url("facturar.png");
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+#btRegistrarCliente {
+    background-image: url("registrarCliente.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#btRegistrarProducto {
+    background-image: url("registrarProducto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#btRegistrarServicio {
+    background-image: url("registrarServicio.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#btVerFacturas {
+    background-image: url("verFacturas.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#btPerfil {
+    background-image: url("perfil.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ------------------- */
+
+/* ---MENUADMIN.HTML--- */
+
+#menuAdmin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+#menuAdmin1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.divLinkCircular {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: #7fb1e4;
+    color: white;
+    border: 3px solid #2670c9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s, width 0.5s;
+}
+
+.divLinkCircular:hover {
+    width: 210px;
+    height: 210px;
+}
+
+#btSolicitudesRegistro {
+    background-image: url("solicitudesRegistro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#btGestionarProveedores {
+    background-image: url("gestionarProveedores.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#imgGestionarProveedores {
+    margin-top: 8px;
+}
+
+/* -------------------- */
+
+/* ---REGISTROPROVEEDOR.HTML--- */
+
+#btRegistrarProv {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#divFormRegistroProv {
+    height: 430px;
+}
+
+/* ---------------------------- */
+
+/* ---PERFIL.HTML--- */
+
+#containerFormPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 73vh;
+}
+
+#divFormPerfil {
+    height: 430px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 2px solid #b6b6b6;
+    border-radius: 14px;
+    z-index: 10;
+    width: 430px;
+    max-width: 80%;
+}
+
+.popupError {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 2px solid #b6b6b6;
+    border-radius: 14px;
+    z-index: 10;
+    width: 430px;
+    max-width: 80%;
+}
+
+.activePopUp {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 200ms ease-in-out;
+}
+
+.popUpHeader {
+    padding: 4px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2670c9;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 2px solid #2670c9;
+}
+
+.imgPopUpHeader {
+    margin-top: 5px;
+}
+
+.closePopUp {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-right: -6px;
+    color: #ff6174;
+}
+
+.popUpBody {
+    padding: 10px 15px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 200ms ease-in-out;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+.overlayError {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 200ms ease-in-out;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+.activeOverlay {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.check {
+    margin-left: -4px;
+    margin-right: 8px;
+}
+
+/* ----------------- */
+
+/* ---REGISTRARCLIENTE.HTML--- */
+
+.containerRegistro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+.lblFormRegistro {
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.divFormRegistro {
+    height: 345px;
+    margin-right: 50px;
+}
+
+.containerTablaRegistro {
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 139px;
+    height: 290px;
+}
+
+.divTablaRegistro {
+    border: 2px solid #b6b6b6;
+    border-radius: 14px;
+    margin: 25px 50px;
+}
+
+.lblTablaRegistro {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 49px;
+    /*margin-bottom: 35px;*/
+}
+
+.tablaRegistro {
+    width: 700px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #2670c9;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+
+td {
+    height: 50px;
+    text-align: center;
+}
+
+.thRegistroRoundedLeft {
+    border-top-left-radius: 12px;
+}
+
+.thRegistroRoundedRight {
+    border-top-right-radius: 12px;
+}
+
+/* --------------------------- */
+
+/* ---REGISTRARSERVICIO.HTML--- */
+
+#divFormRegistroServicio {
+    height: 265px;
+    margin-bottom: 106px;
+    margin-right: 50px;
+}
+
+#containerRegistroServicio {
+    margin-top: 40px;
+}
+
+.trPaddingLeft {
+    padding-left: 90px;
+}
+
+/* --------------------------- */
+
+/* ---LISTAFACTURAS.HTML--- */
+
+.containerLista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 380vh;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.btGenerar {
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.btGenerarPDF {
+    background-color: #e8242c;
+    height: 25px;
+    color: white;
+}
+
+#btLinkPDF {
+    color: white;
+    text-decoration: none;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.btGenerarXML {
+    background-color: #ffb11f;
+    height: 25px;
+    color: white;
+}
+
+#btLinkXML {
+    color: white;
+    text-decoration: none;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.paddingNombreFactura {
+    padding-left: 20px;
+    text-align: left;
+    height: 65px;
+}
+
+.paddingBtGenerarPDF {
+    padding-left: 480px;
+    height: 65px;
+}
+
+.paddingBtGenerarXML {
+    padding-right: 20px;
+    height: 65px;
+}
+
+/* ------------------------ */
+
+/* ---LISTAPROVEEDORES.HTML--- */
+
+.btEliminar {
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6174;
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------- */
+
+/* ---SOLICITUDESREGISTROPROV.HTML--- */
+
+.btAceptar {
+    height: 25px;
+    width: 70px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #02bc7d;
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.btRechazar {
+    height: 25px;
+    width: 70px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6174;
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------------- */
+
+/* ---FACTURAR.HTML--- */
+
+#container {
+}
+
+#containerFacturar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 69vh;
+}
+
+.divFormFacturar {
+    margin: 25px 50px;
+    width: 350px;
+    height: 350px;
+    border: 2px solid #b6b6b6;
+    border-radius: 10px;
+}
+
+#containerFormAñadirProducto {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.formFacturar {
+    margin: 25px 45px;
+}
+
+#formDetallesFactura, #formAñadirProducto, #formAñadirServicio {
+    margin-right: 65px;
+}
+
+#fecha {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+#selCliente {
+    width: 260px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+#selProducto, #selServicio {
+    width: 260px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+#divBtGenerarFactura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+}
+
+#botonAñadirProducto, #botonAñadirServicio {
+    margin-top: 85px;
+}
+
+#btAñadirFactura, #btAñadirProducto, #btAñadirServicio {
+    background-color: #7fb1e4;
+}
+
+#btGenerarFactura {
+    background-color: #2670c9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+#linkListaFacturas {
+    color: #2670c9;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}

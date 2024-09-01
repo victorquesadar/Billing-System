@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <div class="head"> </div>
+
+    <body>
+        <div class="headerProv"> </div>
+
+        <div id="container">
+            <div id="containerFacturar">
+
+                <div id="containerFormDetallesFactura" class="containerFormFacturar">
+                    <label class="lblFormRegistro">Detalles de la factura</label>
+
+                    <div id="divFormDetallesFactura" class="divFormFacturar">
+                        <form id="formDetallesFactura" class="formFacturar">
+                            <div id="campoNombre">
+                                <label>Nombre</label>
+                                <input class="input" type="text" id="nombre" name="nombre" autocomplete="off" required>
+                            </div>
+
+                            <div id="campoFecha">
+                                <label>Fecha</label>
+                                <input class="input" type="date" id="fecha" name="fecha" autocomplete="off" required>
+                            </div>
+
+                            <div id="campoCliente">
+                                <label>Cliente</label>
+                                <select id="selCliente" name="cliente" class="input" required>
+                                    <option value="" style="display: none;">Selecciona una opción</option>
+                                </select>
+                            </div>
+
+                            <div id="botonAñadirFacturar">
+                                <input id="btAñadirFactura" class="submit" type="submit" value="Añadir">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="containerFormAñadirProducto" class="containerFormFacturar">
+                    <label class="lblFormRegistro">Añadir Producto</label>
+
+                    <div id="divFormAñadirProducto" class="divFormFacturar">
+                        <form id="formAñadirProducto" class="formFacturar">
+                            <div id="campoProducto">
+                                <label>Producto</label>
+                                <select id="selProducto" name="producto" class="input" required>
+                                    <option value="" style="display: none;">Selecciona una opción</option>
+                                </select>
+                            </div>
+
+                            <div id="campoCantidad">
+                                <label>Cantidad</label>
+                                <input class="input" type="number" id="cantidad" name="cantidad" autocomplete="off" required>
+                            </div>
+
+                            <div id="botonAñadirProducto">
+                                <input id="btAñadirProducto" class="submit" type="submit" value="Añadir">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="containerFormAñadirServicio" class="containerFormFacturar">
+                    <label class="lblFormRegistro">Añadir Servicio</label>
+
+                    <div id="divFormAñadirServicio" class="divFormFacturar">
+                        <form id="formAñadirServicio" class="formFacturar">
+                            <div id="campoServicio">
+                                <label>Servicio</label>
+                                <select id="selServicio" name="servicio" class="input" required>
+                                    <option value="" style="display: none;">Selecciona una opción</option>
+                                </select>
+                            </div>
+
+                            <div id="campoPrecio">
+                                <label>Precio</label>
+                                <input class="input" type="number" id="precio" name="precio" autocomplete="off" required>
+                            </div>
+
+                            <div id="botonAñadirServicio">
+                                <input id="btAñadirServicio" class="submit" type="submit" value="Añadir">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="divBtGenerarFactura">
+                <form id="formGenerarFactura">
+                    <button type="submit" id="btGenerarFactura">Generar Factura</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="popupDetallesFactura" class="popup">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupDetallesFactura" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\check.png" height="50px" width="50px">
+                <p>
+                    Los detalles de la factura han sido añadidos correctamente.
+                    Añade productos y servicios para continuar con el proceso de facturación.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayDetallesFactura" class="overlay">
+
+        </div>
+
+        <div id="popupErrorDetallesFactura" class="popupError">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupErrorDetallesFactura" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\error.png" height="50px" width="50px">
+                <p>
+                    Error al añadir los detalles de la factura. Por favor intenta de nuevo más tarde.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayErrorDetallesFactura" class="overlayError">
+
+        </div>
+
+        <div id="popupAñadirProducto" class="popup">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupAñadirProducto" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\check.png" height="50px" width="50px">
+                <p>
+                    El producto ha sido añadido correctamente a la factura.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayAñadirProducto" class="overlay">
+
+        </div>
+
+        <div id="popupErrorAñadirProducto" class="popupError">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupErrorAñadirProducto" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\error.png" height="50px" width="50px">
+                <p>
+                    Error al añadir el producto a la factura. Por favor intenta de nuevo más tarde.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayErrorAñadirProducto" class="overlayError">
+
+        </div>
+
+        <div id="popupAñadirServicio" class="popup">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupAñadirServicio" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\check.png" height="50px" width="50px">
+                <p>
+                    El servicio ha sido añadido correctamente a la factura.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayAñadirServicio" class="overlay">
+
+        </div>
+
+        <div id="popupErrorAñadirServicio" class="popupError">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupErrorAñadirServicio" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\error.png" height="50px" width="50px">
+                <p>
+                    Error al añadir el servicio a la factura. Por favor intenta de nuevo más tarde.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayErrorAñadirServicio" class="overlayError">
+
+        </div>
+
+        <div id="popupGenerarFactura" class="popup">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupGenerarFactura" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\check.png" height="50px" width="50px">
+                <p>
+                    La factura ha sido generada correctamente.
+                    Visita el apartado <a id="linkListaFacturas" href="/listaFacturas" target="_blank">Ver Facturas</a>
+                     para visualizar el PDF y el XML de la factura.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayGenerarFactura" class="overlay">
+
+        </div>
+
+        <div id="popupErrorGenerarFactura" class="popupError">
+            <div class="popUpHeader">
+                <div class="imgPopUpHeader">
+                    <img src="\sifac4.png" height="40px" width="40px">
+                </div>
+
+                <button id="closePopupErrorGenerarFactura" class="closePopUp">
+                    &times;
+                </button>
+            </div>
+
+            <div class="popUpBody">
+                <img class="check" src="\error.png" height="50px" width="50px">
+                <p>
+                    Error al generar la factura. Por favor intenta de nuevo más tarde.
+                </p>
+            </div>
+        </div>
+
+        <div id="overlayErrorGenerarFactura" class="overlayError">
+
+        </div>
+
+        <div class="footerBase"> </div>
+
+        <script src="/js/facturarApp.js"> </script>
+    </body>
+</html>
